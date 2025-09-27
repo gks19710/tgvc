@@ -1,0 +1,182 @@
+---
+import '../styles/global.css';
+import { siteContent } from '../content.js';
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Irvine Restore Church - 얼바인리스토어교회" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-sans">
+    <!-- Header -->
+    <header class="bg-teal-800 text-white">
+      <!-- Logo and Title Section -->
+      <div class="flex flex-col items-center py-8">
+        <!-- Logo -->
+        <div class="mb-4">
+          <svg width="120" height="60" viewBox="0 0 120 60" class="text-orange-400">
+            <!-- Stylized boat/ark logo -->
+            <path d="M20 35 Q60 15 100 35 Q80 45 60 45 Q40 45 20 35 Z" fill="currentColor"/>
+            <path d="M58 25 L62 25 L60 35 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        
+        <!-- Church Name -->
+        <h1 class="text-2xl font-light tracking-wider text-center text-orange-400">
+          {siteContent.siteName}
+        </h1>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="border-t border-teal-700">
+        <div class="max-w-6xl mx-auto px-4">
+          <ul class="flex flex-wrap justify-center items-center py-4 space-x-4 md:space-x-8 text-xs md:text-sm">
+            <li><a href="/" class="hover:text-orange-400 transition-colors font-medium text-orange-400 px-2 py-1">{siteContent.navigation.home}</a></li>
+            <li><a href="/vision" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.vision}</a></li>
+            <li><a href="/pastors" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.pastors}</a></li>
+            <li><a href="/story" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.story}</a></li>
+            <li><a href="/news" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.news}</a></li>
+            <li><a href="/media" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.media}</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-teal-800 text-white py-8">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <!-- Logo -->
+        <div class="mb-4">
+          <svg width="80" height="40" viewBox="0 0 120 60" class="text-orange-400 mx-auto">
+            <path d="M20 35 Q60 15 100 35 Q80 45 60 45 Q40 45 20 35 Z" fill="currentColor"/>
+            <path d="M58 25 L62 25 L60 35 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        
+        <!-- Contact Info -->
+        <div class="mb-4 text-orange-400">
+          <p>{siteContent.email} / {siteContent.phone}</p>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="text-xs text-teal-300">
+          <p>{siteContent.copyright}</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Visit Us Sidebar -->
+    <button id="visit-us-btn" class="hidden md:block fixed right-0 top-1/2 transform -translate-y-1/2 bg-teal-800 hover:bg-teal-700 text-white px-3 py-8 rounded-l-lg shadow-lg z-50 transition-colors">
+      <div class="transform -rotate-90 whitespace-nowrap text-sm font-medium tracking-wider">
+        {siteContent.visitUs.sidebarText}
+      </div>
+    </button>
+
+    <!-- Visit Us Modal -->
+    <div id="visit-us-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
+      <div class="bg-teal-800 text-white rounded-lg max-w-md w-full p-8 relative">
+        <button id="close-modal" class="absolute top-4 right-4 text-white hover:text-orange-400 text-2xl">
+          ×
+        </button>
+        
+        <div class="text-center">
+          <!-- Title -->
+          <h2 class="text-3xl font-light text-orange-400 mb-6 korean-text">
+            {siteContent.visitUs.title}
+          </h2>
+          
+          <!-- Address -->
+          <div class="mb-6">
+            <p class="text-lg mb-1">{siteContent.visitUs.address.line1}</p>
+            <p class="text-lg mb-4">{siteContent.visitUs.address.line2}</p>
+            
+            <div class="space-y-1 text-orange-400">
+              <p>{siteContent.visitUs.contact.phone}</p>
+              <p>{siteContent.visitUs.contact.email}</p>
+            </div>
+          </div>
+          
+          <!-- Hours -->
+          <div class="mb-6">
+            <h3 class="text-xl font-medium text-orange-400 mb-4">
+              {siteContent.visitUs.hours.title}
+            </h3>
+            
+            <div class="space-y-3 text-sm">
+              <div>
+                <p class="font-medium">{siteContent.visitUs.hours.sunday.time}</p>
+                <p class="korean-text">{siteContent.visitUs.hours.sunday.korean} {siteContent.visitUs.hours.sunday.english}</p>
+              </div>
+              
+              <div>
+                <p class="font-medium">{siteContent.visitUs.hours.wednesday.time}</p>
+                <p class="korean-text">{siteContent.visitUs.hours.wednesday.korean} {siteContent.visitUs.hours.wednesday.english}</p>
+              </div>
+              
+              <div>
+                <p class="font-medium">{siteContent.visitUs.hours.wednesdayEvening.time}</p>
+                <p class="korean-text">{siteContent.visitUs.hours.wednesdayEvening.korean} {siteContent.visitUs.hours.wednesdayEvening.english}</p>
+              </div>
+              
+              <div>
+                <p class="font-medium">{siteContent.visitUs.hours.friday.time}</p>
+                <p class="korean-text">{siteContent.visitUs.hours.friday.korean} {siteContent.visitUs.hours.friday.english}</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Notes -->
+          <div class="text-xs text-red-300 space-y-1 korean-text">
+            <p>{siteContent.visitUs.notes.asterisk}</p>
+            <p>{siteContent.visitUs.notes.contact}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Visit Us Modal functionality
+      const visitUsBtn = document.getElementById('visit-us-btn');
+      const visitUsModal = document.getElementById('visit-us-modal');
+      const closeModal = document.getElementById('close-modal');
+
+      if (visitUsBtn && visitUsModal && closeModal) {
+        visitUsBtn.addEventListener('click', () => {
+          visitUsModal.classList.remove('hidden');
+          visitUsModal.classList.add('flex');
+        });
+
+        closeModal.addEventListener('click', () => {
+          visitUsModal.classList.add('hidden');
+          visitUsModal.classList.remove('flex');
+        });
+
+        visitUsModal.addEventListener('click', (e) => {
+          if (e.target === visitUsModal) {
+            visitUsModal.classList.add('hidden');
+            visitUsModal.classList.remove('flex');
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

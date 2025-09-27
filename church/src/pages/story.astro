@@ -1,0 +1,149 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { siteContent } from '../content.js';
+---
+
+<Layout title={`${siteContent.story.title} - ${siteContent.siteName}`}>
+  <!-- Hero Section -->
+  <section class="relative py-20 bg-teal-800 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-light text-orange-400 mb-4">
+        {siteContent.story.title}
+      </h1>
+      <p class="text-xl korean-text text-teal-200">
+        {siteContent.story.subtitle}
+      </p>
+    </div>
+  </section>
+
+  <!-- Our Beginning Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <!-- Icon -->
+        <div class="w-20 h-20 mx-auto bg-orange-400 rounded-full flex items-center justify-center mb-6">
+          <svg width="40" height="40" viewBox="0 0 40 40" class="text-white">
+            <!-- Seed/Beginning icon -->
+            <circle cx="20" cy="25" r="3" fill="currentColor"/>
+            <path d="M20 22 Q15 18 12 15 M20 22 Q25 18 28 15" stroke="currentColor" stroke-width="2" fill="none"/>
+            <path d="M20 28 L20 35" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        
+        <h2 class="text-3xl font-light text-teal-800 mb-4">
+          {siteContent.story.founding.title}
+        </h2>
+        <p class="text-xl korean-text text-orange-500">
+          {siteContent.story.founding.korean}
+        </p>
+      </div>
+      
+      <!-- Content -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          {siteContent.story.founding.content}
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed korean-text">
+          {siteContent.story.founding.contentKorean}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Growing Together Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <!-- Icon -->
+        <div class="w-20 h-20 mx-auto bg-teal-600 rounded-full flex items-center justify-center mb-6">
+          <svg width="40" height="40" viewBox="0 0 40 40" class="text-white">
+            <!-- Growth/Tree icon -->
+            <path d="M20 35 L20 25" stroke="currentColor" stroke-width="3"/>
+            <circle cx="15" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="25" cy="20" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        
+        <h2 class="text-3xl font-light text-teal-800 mb-4">
+          {siteContent.story.growth.title}
+        </h2>
+        <p class="text-xl korean-text text-orange-500">
+          {siteContent.story.growth.korean}
+        </p>
+      </div>
+      
+      <!-- Content -->
+      <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          {siteContent.story.growth.content}
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed korean-text">
+          {siteContent.story.growth.contentKorean}
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-light text-teal-800 mb-4">
+          Our Journey
+        </h2>
+        <p class="text-xl korean-text text-orange-500">
+          우리의 여정
+        </p>
+      </div>
+      
+      <!-- Timeline Items -->
+      <div class="space-y-8">
+        <!-- Timeline Item 1 -->
+        <div class="flex items-center">
+          <div class="w-4 h-4 bg-orange-400 rounded-full mr-6 flex-shrink-0"></div>
+          <div class="bg-white rounded-lg shadow p-6 flex-grow">
+            <h3 class="text-xl font-medium text-teal-800 mb-2">Church Founded</h3>
+            <p class="text-gray-700 korean-text">교회 설립</p>
+            <p class="text-gray-600 mt-2">Beginning our mission to bring restoration to the community.</p>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 2 -->
+        <div class="flex items-center">
+          <div class="w-4 h-4 bg-teal-600 rounded-full mr-6 flex-shrink-0"></div>
+          <div class="bg-white rounded-lg shadow p-6 flex-grow">
+            <h3 class="text-xl font-medium text-teal-800 mb-2">Growing Community</h3>
+            <p class="text-gray-700 korean-text">성장하는 공동체</p>
+            <p class="text-gray-600 mt-2">Building relationships and serving our neighbors with love.</p>
+          </div>
+        </div>
+        
+        <!-- Timeline Item 3 -->
+        <div class="flex items-center">
+          <div class="w-4 h-4 bg-orange-400 rounded-full mr-6 flex-shrink-0"></div>
+          <div class="bg-white rounded-lg shadow p-6 flex-grow">
+            <h3 class="text-xl font-medium text-teal-800 mb-2">Looking Forward</h3>
+            <p class="text-gray-700 korean-text">미래를 바라보며</p>
+            <p class="text-gray-600 mt-2">Continuing to grow in faith and service to our community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Our Story Section -->
+  <section class="relative py-20 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')">
+    <div class="max-w-4xl mx-auto px-4 text-center text-white">
+      <h2 class="text-3xl md:text-4xl font-light mb-6">
+        Be Part of Our Story
+      </h2>
+      <p class="text-xl korean-text mb-8">
+        우리 이야기의 일부가 되어주세요
+      </p>
+      <p class="text-lg leading-relaxed max-w-2xl mx-auto">
+        Every person who joins our church family adds a new chapter to our story. We invite you to discover how God wants to use your story as part of His greater narrative.
+      </p>
+    </div>
+  </section>
+</Layout>
