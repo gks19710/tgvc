@@ -1,10 +1,10 @@
 export const siteContent = {
   // ===== SITE METADATA ===== 
   // 사이트 메타데이터
-  siteName: "THE GOOD VILLAGE CHURCH",
-  email: "thegoodvillagechurch@gmail.com",
-  phone: "949-285-1515",
-  copyright: "©2026 by THE GOOD VILLAGE CHURCH Powered and secured by Wix",
+  siteName: "Samsung Presbyterian Church",
+  email: "samsungchurch2025@gmail.com",
+  phone: "(714) 646-9259",
+  copyright: "©2025 by Samsung Presbyterian Church Powered and secured by Design ELF",
   
   // ===== NAVIGATION MENU =====
   // 네비게이션 메뉴
@@ -35,7 +35,7 @@ export const siteContent = {
 
   // ===== KOREAN CHURCH NAME =====
   // 한국어 교회 이름
-  churchNameKorean: "얼바인리스토어교회",
+  churchNameKorean: "삼성장로교회",
 
   // ===== HOMEPAGE CHURCH SCHEDULE SECTION =====
   // 홈페이지 교회 일정 섹션
@@ -44,7 +44,7 @@ export const siteContent = {
     worship: {
       title: "Worship",
       korean: "주일 예배",
-      time: "11 am",
+      time: "11:45 am",
       day: "Sunday"
     },
     note: "* 예배 참석을 원하시는 분은 이메일이나 문자로 연락 주시기 바랍니다."
@@ -54,7 +54,7 @@ export const siteContent = {
   // 홈페이지 헌금 섹션
   support: {
     title: "Support Our Church",
-    description: "헌금은 예배실로 들어오시는 우측에 헌금함에 넣어주시기 바랍니다.",
+    description: "헌금은 예배실로 들어오시는 입구 헌금함에 넣어주시기 바랍니다.",
     subdescription: "* 온라인 헌금은 아직 설치 되지 않았습니다.",
     buttonText: "OFFERING"
   },
@@ -65,34 +65,34 @@ export const siteContent = {
     sidebarText: "Visit Us",
     title: "찾아오시는 길", // "How to Find Us"
     address: {
-      line1: "123 Main St",
-      line2: "Anytown, USA 12345"
+      line1: "111 W Las Palmas Dr",
+      line2: "Fullerton, CA 92835"
     },
     contact: {
-      phone: "949-285-1515",
-      email: "thegoodvillagechurch@gmail.com"
+      phone: "(714) 646-9259",
+      email: "samsungchurch2025@gmail.com"
     },
     hours: {
       title: "Hours",
       sunday: {
-        time: "Sunday 11 am",
+        time: "Sunday 11:45 am",
         korean: "주일 예배",
         english: "Sunday Worship"
       },
       wednesday: {
-        time: "Wednesday 10 am",
-        korean: "어머니 기도회",
-        english: "Mom's Prayer*"
+        time: "",
+        korean: "",
+        english: ""
       },
       wednesdayEvening: {
-        time: "Wednesday 7 pm",
-        korean: "성경 공부",
-        english: "Coffee Break*"
+        time: "",
+        korean: "",
+        english: ""
       },
       friday: {
-        time: "Friday 7 pm",
-        korean: "금요기도회",
-        english: "Friday Prayer*"
+        time: "",
+        korean: "",
+        english: ""
       }
     },
     notes: {
@@ -129,12 +129,12 @@ export const siteContent = {
     introKorean: "우리 목회팀은 사랑과 헌신으로 하나님과 우리 공동체를 섬기는 데 전념하고 있습니다.",
     // Placeholder pastor information
     leadPastor: {
-      name: "Pastor John Kim",
-      nameKorean: "김요한 목사",
+      name: "Pastor Shin",
+      nameKorean: "신원규 목사",
       title: "Lead Pastor",
       titleKorean: "담임목사",
-      bio: "Pastor Kim has been serving in ministry for over 15 years, with a heart for restoration and community building.",
-      bioKorean: "김 목사님은 15년 넘게 사역을 섬겨오셨으며, 회복과 공동체 건설에 대한 마음을 가지고 계십니다."
+      bio: "Pastor Shin has been serving in ministry for over 41 years, with a heart for restoration and community building.",
+      bioKorean: "신원규 목사님은 41년 넘게 사역을 섬겨오셨으며, 회복과 공동체 건설에 대한 마음을 가지고 계십니다."
     }
   },
 
@@ -146,8 +146,8 @@ export const siteContent = {
     founding: {
       title: "Our Beginning",
       korean: "우리의 시작",
-      content: "The Good Village Church was founded with a vision to create a place where people can experience God's love and find restoration in their lives.",
-      contentKorean: "얼바인 리스토어 교회는 사람들이 하나님의 사랑을 경험하고 삶에서 회복을 찾을 수 있는 곳을 만들고자 하는 비전으로 설립되었습니다."
+      content: "Samsung Presbyterian Church was founded with a vision to create a place where people can experience God's love and find restoration in their lives.",
+      contentKorean: "삼성장로교회는 사람들이 하나님의 사랑을 경험하고 삶에서 회복을 찾을 수 있는 곳을 만들고자 하는 비전으로 설립되었습니다."
     },
     growth: {
       title: "Growing Together",
