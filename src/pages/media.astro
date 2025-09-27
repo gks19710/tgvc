@@ -1,0 +1,214 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { siteContent } from '../content.js';
+---
+
+<Layout title={`${siteContent.media.title} - ${siteContent.siteName}`}>
+  <!-- Hero Section -->
+  <section class="relative py-20 bg-teal-800 text-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-light text-orange-400 mb-4">
+        {siteContent.media.title}
+      </h1>
+      <p class="text-xl korean-text text-teal-200">
+        {siteContent.media.subtitle}
+      </p>
+    </div>
+  </section>
+
+  <!-- Recent Sermons Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <!-- Icon -->
+        <div class="w-20 h-20 mx-auto bg-orange-400 rounded-full flex items-center justify-center mb-6">
+          <svg width="40" height="40" viewBox="0 0 40 40" class="text-white">
+            <!-- Play/Audio icon -->
+            <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 12 L28 20 L16 28 Z" fill="currentColor"/>
+          </svg>
+        </div>
+        
+        <h2 class="text-3xl font-light text-teal-800 mb-4">
+          {siteContent.media.sermons.title}
+        </h2>
+        <p class="text-xl korean-text text-orange-500">
+          {siteContent.media.sermons.korean}
+        </p>
+      </div>
+      
+      <!-- Sermons Content -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6">
+          {siteContent.media.sermons.content}
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed korean-text mb-8">
+          {siteContent.media.sermons.contentKorean}
+        </p>
+        
+        <!-- Placeholder for sermon list -->
+        <div class="bg-gray-50 rounded-lg p-6">
+          <p class="text-gray-600 mb-2">Sermon recordings will be available here soon.</p>
+          <p class="text-gray-600 korean-text text-sm">설교 녹음이 곧 여기에서 제공될 예정입니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <!-- Icon -->
+        <div class="w-20 h-20 mx-auto bg-teal-600 rounded-full flex items-center justify-center mb-6">
+          <svg width="40" height="40" viewBox="0 0 40 40" class="text-white">
+            <!-- Camera/Photo icon -->
+            <rect x="6" y="12" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+            <rect x="14" y="8" width="12" height="4" rx="2" fill="currentColor"/>
+            <circle cx="20" cy="22" r="3" fill="currentColor"/>
+          </svg>
+        </div>
+        
+        <h2 class="text-3xl font-light text-teal-800 mb-4">
+          {siteContent.media.photos.title}
+        </h2>
+        <p class="text-xl korean-text text-orange-500">
+          {siteContent.media.photos.korean}
+        </p>
+      </div>
+      
+      <!-- Photo Gallery Content -->
+      <div class="bg-gray-50 rounded-lg shadow-lg p-8">
+        <p class="text-lg text-gray-700 leading-relaxed mb-6 text-center">
+          {siteContent.media.photos.content}
+        </p>
+        <p class="text-lg text-gray-700 leading-relaxed korean-text mb-8 text-center">
+          {siteContent.media.photos.contentKorean}
+        </p>
+        
+        <!-- Placeholder photo grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" class="text-gray-400">
+              <rect x="6" y="12" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" class="text-gray-400">
+              <rect x="6" y="12" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" class="text-gray-400">
+              <rect x="6" y="12" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" class="text-gray-400">
+              <rect x="6" y="12" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" class="text-gray-400">
+              <rect x="6" y="12" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" class="text-gray-400">
+              <rect x="6" y="12" width="28" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="20" cy="22" r="3" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <p class="text-gray-600">Photo gallery coming soon!</p>
+          <p class="text-gray-600 korean-text text-sm">사진 갤러리가 곧 제공될 예정입니다!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Streaming Info -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-light text-teal-800 mb-4">
+          Live Streaming
+        </h2>
+        <p class="text-xl korean-text text-orange-500">
+          실시간 방송
+        </p>
+      </div>
+      
+      <!-- Streaming Info -->
+      <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+        <div class="w-16 h-16 mx-auto bg-red-500 rounded-full flex items-center justify-center mb-6">
+          <svg width="32" height="32" viewBox="0 0 32 32" class="text-white">
+            <!-- Live icon -->
+            <circle cx="16" cy="16" r="4" fill="currentColor"/>
+            <circle cx="16" cy="16" r="8" fill="none" stroke="currentColor" stroke-width="2" opacity="0.5"/>
+            <circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+          </svg>
+        </div>
+        
+        <h3 class="text-2xl font-light text-teal-800 mb-4">
+          Join Us Online
+        </h3>
+        <p class="text-lg korean-text text-orange-500 mb-6">
+          온라인으로 함께하세요
+        </p>
+        
+        <p class="text-gray-700 mb-4">
+          Live streaming information will be available here for our Sunday worship services.
+        </p>
+        <p class="text-gray-700 korean-text mb-6">
+          주일 예배 실시간 방송 정보가 여기에 제공될 예정입니다.
+        </p>
+        
+        <div class="bg-gray-50 rounded-lg p-6">
+          <p class="text-gray-600 font-medium">Sunday 11:00 AM</p>
+          <p class="text-gray-600 korean-text">주일 오전 11시</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact for Media Section -->
+  <section class="relative py-20 bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')">
+    <div class="max-w-4xl mx-auto px-4 text-center text-white">
+      <h2 class="text-3xl md:text-4xl font-light mb-6">
+        Questions About Our Media?
+      </h2>
+      <p class="text-xl korean-text mb-8">
+        미디어에 대한 질문이 있으신가요?
+      </p>
+      
+      <div class="bg-white bg-opacity-95 rounded-lg p-8 max-w-md mx-auto">
+        <p class="text-gray-700 mb-4">
+          Contact us for more information about our media content and services.
+        </p>
+        <p class="text-gray-700 korean-text mb-6">
+          미디어 콘텐츠와 서비스에 대한 자세한 정보는 연락주세요.
+        </p>
+        
+        <div class="space-y-2 text-teal-800">
+          <p class="font-medium">{siteContent.email}</p>
+          <p class="font-medium">{siteContent.phone}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
