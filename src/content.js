@@ -1,10 +1,10 @@
 export const siteContent = {
   // ===== SITE METADATA ===== 
   // 사이트 메타데이터
-  siteName: "IRVINE RESTORE CHURCH",
-  email: "irvinerestorechurch@gmail.com",
+  siteName: "THE GOOD VILLAGE CHURCH",
+  email: "thegoodvillagechurch@gmail.com",
   phone: "949-285-1515",
-  copyright: "©2026 by IRVINE RESTORE CHURCH Powered and secured by Wix",
+  copyright: "©2026 by THE GOOD VILLAGE CHURCH Powered and secured by Wix",
   
   // ===== NAVIGATION MENU =====
   // 네비게이션 메뉴
@@ -65,12 +65,12 @@ export const siteContent = {
     sidebarText: "Visit Us",
     title: "찾아오시는 길", // "How to Find Us"
     address: {
-      line1: "2 Faraday, Suite C",
-      line2: "Irvine, CA 92618"
+      line1: "123 Main St",
+      line2: "Anytown, USA 12345"
     },
     contact: {
       phone: "949-285-1515",
-      email: "irvinerestorechurch@gmail.com"
+      email: "thegoodvillagechurch@gmail.com"
     },
     hours: {
       title: "Hours",
@@ -146,7 +146,7 @@ export const siteContent = {
     founding: {
       title: "Our Beginning",
       korean: "우리의 시작",
-      content: "Irvine Restore Church was founded with a vision to create a place where people can experience God's love and find restoration in their lives.",
+      content: "The Good Village Church was founded with a vision to create a place where people can experience God's love and find restoration in their lives.",
       contentKorean: "얼바인 리스토어 교회는 사람들이 하나님의 사랑을 경험하고 삶에서 회복을 찾을 수 있는 곳을 만들고자 하는 비전으로 설립되었습니다."
     },
     growth: {
