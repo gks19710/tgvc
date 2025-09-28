@@ -8,24 +8,29 @@ import { siteContent } from '../content.js';
   <section class="relative h-screen bg-cover bg-center bg-no-repeat" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')">
     <div class="absolute inset-0 flex items-center justify-center">
       <div class="text-center text-white px-4">
-        <!-- Korean Church Name -->
-        <div class="mb-8">
-          <h2 class="text-4xl md:text-6xl font-light text-center mb-4 text-white korean-text">
-            {siteContent.churchNameKorean}
-          </h2>
-        </div>
-        
         <!-- Main Hero Text -->
-        <div class="space-y-2 md:space-y-4 text-center max-w-2xl korean-text">
-          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-orange-400 leading-tight">
+        <div class="space-y-2 md:space-y-4 text-center max-w-4xl korean-text mb-8">
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light text-orange-400 leading-tight">
             {siteContent.hero.title}
           </h1>
-          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-orange-400 leading-tight">
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light text-orange-400 leading-tight">
             {siteContent.hero.subtitle}
           </h1>
-          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight">
+          <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-light text-orange-400 leading-tight">
             {siteContent.hero.description}
           </h1>
+        </div>
+        
+        <!-- Divider Line -->
+        <div class="flex justify-center mb-8">
+          <div class="w-32 h-1 bg-white rounded-full opacity-60"></div>
+        </div>
+        
+        <!-- Korean Church Name -->
+        <div class="mt-4">
+          <h2 class="text-3xl md:text-5xl lg:text-6xl font-bold text-center text-white korean-text church-name-hero">
+            {siteContent.churchNameKorean}
+          </h2>
         </div>
       </div>
     </div>
@@ -148,14 +153,5 @@ import { siteContent } from '../content.js';
       </div>
     </div>
     
-    <!-- Footer Logo -->
-    <div class="absolute bottom-8 left-8">
-      <img src="/logo-1.jpg" alt="Church Logo" width="160" height="80" class="object-contain">
-    </div>
-    
-    <!-- Contact Info -->
-    <div class="absolute bottom-8 right-8 text-white text-sm">
-      <p>samsungchurch2025@gmail.com / (714) 646-9259</p>
-    </div>
   </section>
 </Layout>
