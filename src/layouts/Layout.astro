@@ -23,37 +23,15 @@ const { title } = Astro.props;
   </head>
   <body class="font-sans">
     <!-- Header -->
-    <header class="bg-teal-800 text-white">
+    <header class="text-white" style="background-color: #53AB47;">
       <!-- Logo and Title Section -->
       <div class="flex flex-col items-center py-8">
         <!-- Logo -->
         <div class="mb-4">
-          <svg width="120" height="60" viewBox="0 0 120 60" class="text-orange-400">
-            <!-- Stylized boat/ark logo -->
-            <path d="M20 35 Q60 15 100 35 Q80 45 60 45 Q40 45 20 35 Z" fill="currentColor"/>
-            <path d="M58 25 L62 25 L60 35 Z" fill="currentColor"/>
-          </svg>
+          <img src="/logo1.jpg" alt="Church Logo" width="270" height="135" class="object-contain" style="background: transparent; border: none; outline: none;">
         </div>
-        
-        <!-- Church Name -->
-        <h1 class="text-2xl font-light tracking-wider text-center text-orange-400">
-          {siteContent.siteName}
-        </h1>
       </div>
 
-      <!-- Navigation -->
-      <nav class="border-t border-teal-700">
-        <div class="max-w-6xl mx-auto px-4">
-          <ul class="flex flex-wrap justify-center items-center py-4 space-x-4 md:space-x-8 text-xs md:text-sm">
-            <li><a href="/" class="hover:text-orange-400 transition-colors font-medium text-orange-400 px-2 py-1">{siteContent.navigation.home}</a></li>
-            <li><a href="/vision" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.vision}</a></li>
-            <li><a href="/pastors" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.pastors}</a></li>
-            <li><a href="/story" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.story}</a></li>
-            <li><a href="/news" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.news}</a></li>
-            <li><a href="/media" class="hover:text-orange-400 transition-colors px-2 py-1">{siteContent.navigation.media}</a></li>
-          </ul>
-        </div>
-      </nav>
     </header>
 
     <!-- Main Content -->
@@ -62,19 +40,16 @@ const { title } = Astro.props;
     </main>
 
     <!-- Footer -->
-    <footer class="bg-teal-800 text-white py-8">
+    <footer class="text-white py-8" style="background-color: #53AB47;">
       <div class="max-w-6xl mx-auto px-4 text-center">
         <!-- Logo -->
         <div class="mb-4">
-          <svg width="80" height="40" viewBox="0 0 120 60" class="text-orange-400 mx-auto">
-            <path d="M20 35 Q60 15 100 35 Q80 45 60 45 Q40 45 20 35 Z" fill="currentColor"/>
-            <path d="M58 25 L62 25 L60 35 Z" fill="currentColor"/>
-          </svg>
+          <img src="/logo1.jpg" alt="Church Logo" width="160" height="80" class="object-contain mx-auto">
         </div>
         
         <!-- Contact Info -->
-        <div class="mb-4 text-orange-400">
-          <p>{siteContent.email} / {siteContent.phone}</p>
+        <div class="mb-4 text-white">
+          <p>samsungchurch2025@gmail.com / (714) 646-9259</p>
         </div>
         
         <!-- Copyright -->
@@ -85,7 +60,7 @@ const { title } = Astro.props;
     </footer>
 
     <!-- Visit Us Sidebar -->
-    <button id="visit-us-btn" class="hidden md:block fixed right-0 top-1/2 transform -translate-y-1/2 bg-teal-800 hover:bg-teal-700 text-white px-3 py-8 rounded-l-lg shadow-lg z-50 transition-colors">
+    <button id="visit-us-btn" class="hidden md:block fixed right-0 top-1/2 transform -translate-y-1/2 text-white px-3 py-8 rounded-l-lg shadow-lg z-50 transition-colors" style="background-color: #53AB47;" onmouseover="this.style.backgroundColor='#4A9A3F'" onmouseout="this.style.backgroundColor='#53AB47'">
       <div class="transform -rotate-90 whitespace-nowrap text-sm font-medium tracking-wider">
         {siteContent.visitUs.sidebarText}
       </div>
@@ -93,7 +68,7 @@ const { title } = Astro.props;
 
     <!-- Visit Us Modal -->
     <div id="visit-us-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4">
-      <div class="bg-teal-800 text-white rounded-lg max-w-md w-full p-8 relative">
+      <div class="text-white rounded-lg max-w-md w-full p-8 relative" style="background-color: #374151;">
         <button id="close-modal" class="absolute top-4 right-4 text-white hover:text-orange-400 text-2xl">
           ×
         </button>
@@ -108,6 +83,7 @@ const { title } = Astro.props;
           <div class="mb-6">
             <p class="text-lg mb-1">{siteContent.visitUs.address.line1}</p>
             <p class="text-lg mb-4">{siteContent.visitUs.address.line2}</p>
+            
             
             <div class="space-y-1 text-orange-400">
               <p>{siteContent.visitUs.contact.phone}</p>
